@@ -22,3 +22,12 @@ Defines the variable servername used in code
 # terraform.tfstate
 
 Contains histoty of all the changes to main.tf
+
+# Checker Script
+
+
+1.copy the script to folder on your local machine
+2.navigate to folder 
+3.run the script 
+
+
