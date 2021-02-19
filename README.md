@@ -2,10 +2,26 @@
 
 Deploys a simple Apache web server instance on Ubuntu 20.04 in AWS using Terraform v0.14.6.
 
-Initializes the terraform environment. terraform init
+Launch the ec2 with Terraform
+On first usage, you will need to execute terraform init to initialize the terraform providers used.
 
-Builds the infrastructure. terraform apply
+To deploy the content, 
+terraform plan
+terraform apply
+When terraform is done, you should see a lot of output ending with something like this:
 
+Apply complete! Resources: 14 added, 0 changed, 0 destroyed.
+
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate
+
+Outputs:
+
+clients_dns = internal-es-test-client-lb-963348710.eu-central-1.elb.amazonaws.com
 
 # MAIN.TF
 
